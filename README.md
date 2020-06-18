@@ -1,6 +1,6 @@
 # Data Over Sound
 
-A new flutter plugin with native rappers that attempts to prove data transfer over sound by means of Frequency modulation (shifting frequency tones).
+A new flutter plugin with native wrappers that attempts to prove data transfer over sound by means of Frequency modulation (shifting frequency tones).
 The concept of transferring data over sound is not new and there are many different approaches to handle this. https://chirp.io offered these services and were very great at it. But earlier this year they announced that they would no longer be offering such services hence my drive to crack this so-called tech block.
 
 This project is highly experimental hence lots of bugs and such the goal here is to bring it to the community to bring it up to standard. There are three parts of this plugin: Native android wrapper, Native iOS, and macOS implementations and the dart bridge that connects them as a single dart package.
