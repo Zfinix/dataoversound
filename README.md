@@ -30,7 +30,34 @@ class _HomePageState extends State<HomePage> implements CallbackSendRec {
  @override
     void receivingSomething()...
 ```
-
+3. Make request
+ ```dart
+ ...
+ sendMessage(this)
+ ...
+ void sendMessage(CallbackSendRec callback) async {
+ 
+    var message = ""your message;
+    var _sendTask = BufferSoundTask();
+     
+     try {
+        //Convert String to Uint8List
+        Uint8List byteText = utf8.encode(message);
+        
+        //Set Callback
+       _sendTask.setCallbackSR(callback);
+       
+       //Set buffer text
+        _sendTask.setBuffer(byteText);
+        
+        //Execute Request
+        await _sendTask.execute();
+        
+      } catch (e) {
+        print(e.toString());
+      }
+  }
+ ```
 ## To be done
 - Fix Pending Sound Receiving bugs on android.
 - Implement Sound Receiving in swift for both ios and macos.
