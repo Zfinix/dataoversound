@@ -1,0 +1,46 @@
+name: dataoversound_example
+description: Demonstrates how to use the dataoversound plugin.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  background_fetch: '^0.5.1'
+  cupertino_icons: ^0.1.3
+  provider: 3.0.0+1
+  permission_handler: 5.0.0+hotfix.3
+  google_fonts: 0.2.0
+  line_icons: ^0.2.0
+  dataoversound:
+    # When depending on this package from a real application you should use:
+    #   dataoversound: ^x.y.z
+    # See https://dart.dev/tools/pub/dependencies#version-constraints
+    # The example app is bundled with the plugin so we use a path dependency on
+    # the parent directory to use the current plugin's version. 
+    path: ../
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+   - assets/images/logo.png
