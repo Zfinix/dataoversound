@@ -5,8 +5,6 @@ import 'package:dart_numerics/dart_numerics.dart' as maths;
 import 'package:extended_math/extended_math.dart' as math;
 
 /// ****************************************************************************
-///  Compilation:  javac Complex.java
-///  Execution:    java Complex
 ///
 ///  Data type for complex numbers.
 ///
